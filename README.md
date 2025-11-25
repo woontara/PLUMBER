@@ -1,16 +1,34 @@
-# React + Vite
+# Plumber Dispatch Pro (Plumber Uber) 🛠️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**"Uber for Plumbers"** - A professional dispatch application designed for field technicians.
 
-Currently, two official plugins are available:
+## 📱 Project Overview
+**Plumber Dispatch Pro** is a mobile-first web application that connects professional plumbers with urgent repair jobs in real-time. It streamlines the entire workflow from job acceptance to payment, providing a seamless experience similar to ride-sharing apps but tailored for field service.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Key Features
+*   **Real-time Job Dispatch**: View and accept urgent jobs (Pipe Repair, Leakage, etc.) instantly.
+*   **Smart Dashboard**: Filter jobs by urgency, distance, or status.
+*   **Location-Based**: Integrated map view to visualize job locations.
+*   **Fintech Wallet**: Track earnings, view transaction history, and manage withdrawals.
+*   **Professional Profile**: Manage availability status (Online/Offline) and view performance ratings.
+*   **Payment Integration**: Seamless payment processing via **PortOne**.
+*   **Premium Design**: Modern, high-contrast UI designed for outdoor visibility (Deep Navy & Emerald Green theme).
 
-## React Compiler
+## 🛠️ Tech Stack
+*   **Frontend**: React, Vite
+*   **Styling**: Vanilla CSS (Custom Design System)
+*   **Routing**: React Router DOM
+*   **Icons**: Lucide React
+*   **Maps**: Leaflet / React-Leaflet
+*   **Payment**: PortOne (Iamport) SDK
+*   **Deployment**: Firebase Hosting
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Live Demo
+*   **Web App**: [https://plumberuber-9af6e.web.app](https://plumberuber-9af6e.web.app)
+*   **GitHub Repo**: [https://github.com/woontara/PLUMBER](https://github.com/woontara/PLUMBER)
 
-## Expanding the ESLint configuration
+## 📸 Screenshots
+*(Screenshots available in `walkthrough.md`)*
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+*Developed by Antigravity*
