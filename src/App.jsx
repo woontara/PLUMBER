@@ -10,6 +10,10 @@ import Profile from './pages/Profile';
 import Wallet from './pages/Wallet';
 import Notifications from './pages/Notifications';
 import BottomNav from './components/BottomNav';
+import RoleSelection from './pages/RoleSelection';
+import CustomerDashboard from './pages/customer/CustomerDashboard';
+import RequestJob from './pages/customer/RequestJob';
+import AdminDashboard from './pages/admin/AdminDashboard';
 
 const Layout = () => (
   <>
@@ -24,9 +28,18 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<RoleSelection />} />
+        <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
         <Route path="/register" element={<Register />} />
 
+        {/* Customer Routes */}
+        <Route path="/customer/dashboard" element={<CustomerDashboard />} />
+        <Route path="/customer/request" element={<RequestJob />} />
+
+        {/* Admin Routes */}
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
+
+        {/* Plumber Routes */}
         <Route element={<Layout />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/job/:id" element={<JobDetail />} />
@@ -36,8 +49,6 @@ function App() {
           <Route path="/wallet" element={<Wallet />} />
           <Route path="/notifications" element={<Notifications />} />
         </Route>
-
-        <Route path="/" element={isAuthenticated ? <Navigate to="/dashboard" /> : <Navigate to="/login" />} />
       </Routes>
     </Router>
   );
